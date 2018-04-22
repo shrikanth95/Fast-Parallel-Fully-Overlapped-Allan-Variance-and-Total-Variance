@@ -3,4 +3,4 @@ Code for the fast, parallel algorithm for Fully Overlapped Allan Variance and To
 
 "A Fast, Parallel Algorithm for Fully Overlapped Allan Variance and Total Variance for Analysis and Modelling of Noise in Inertial Sensors," Shrikanth Yadav, Saurav K. Shastri, Ghanashyam B. Chakravarthi, Viraj Kumar, Divya Rao A and Vinod Kumar Agrawal.  Accepted in IEEE Sensors Letters.
 
-Document available on request.
+

@@ -9,4 +9,4 @@ doi: 10.1109/LSENS.2018.2829799
 URL: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8345576&isnumber=7862766
 keywords: {Clustering algorithms;Instruction sets;Matlab;Random access memory;Sensors;Stochastic processes;TV;Allan Variance;Inertial sensors;Sensor noise modelling and analysis;Stochastic errors}
 
-Corresponding authors: Shrikanth M. Yadhav ( shrikanth_yadav@outlook.com ), Saurav K. Shastri ( sauravks1996@gmail.com ), Ghanshyam B. Chakravarthi ( ghanashyam.chakravarthi@gmail.com ).
+Corresponding authors: Shrikanth M. Yadav ( shrikanth_yadav@outlook.com ), Saurav K. Shastri ( sauravks1996@gmail.com ), Ghanshyam B. Chakravarthi ( ghanashyam.chakravarthi@gmail.com ).

@@ -83,10 +83,10 @@ int main()
 {
 	FILE *ptr_file, *fp;
 	int j;
-    const int len=3000;
-    const int threadNum=1;
+    	const int len=3000;
+    	const int threadNum=1;
 	char *bufx = (char *)malloc(10*sizeof(char));
-    float *x;
+    	float *x;
 	x = (float *)malloc((len+1)*sizeof(float));
 	ptr_file = fopen("large.txt", "r");
 	fp = fopen("allvar_large.txt", "w");
@@ -105,26 +105,26 @@ int main()
 		j++;
 	}
 	printf("function called \n");
-    float *av=FOAV( x, len, 20000, threadNum);
+    	float *av=FOAV( x, len, 20000, threadNum);
  	
 	printf("\nAV ends at len = %d to %d \n",len,len/2-1);
 	for(j = 0; j<10; j++)
 	{
 		printf("%f\n",av[j]);
 	}    
-    j = 0;
+   	j = 0;
 	while(j < len/2)
 	{
 		fprintf(fp, "%f \t",av[j++]);
 	}
 	clock_t end_total = clock();
 	float time_spent2 = (float)(end_total - begin) / CLOCKS_PER_SEC;
-    printf(" Total time  %f ! \n",time_spent2);
+    	printf(" Total time  %f ! \n",time_spent2);
 	fclose(fp);
 	fclose(ptr_file);
 	free(bufx);
 	free(x);
 	free(av);
-    printf("files closed");
-    return 0;
+    	printf("files closed");
+    	return 0;
 }

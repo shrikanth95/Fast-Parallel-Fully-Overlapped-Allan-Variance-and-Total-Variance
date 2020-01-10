@@ -5,8 +5,7 @@
 #include<math.h>
 #include<omp.h>
 #include<stdio.h>
-//#define threadNum 1
-//#define len 30000
+
 float* FOAV(float* x, long len, int seq_len, int threadNum)
 {
     float *av = malloc((len/2+1)*sizeof(float));
@@ -57,8 +56,7 @@ float* FOAV(float* x, long len, int seq_len, int threadNum)
 			short1[k][j] = short1[k][j-1] - x[j-1] + x[p[k]+j];
 	       	short2[k][j] = short2[k][j-1] - x[p[k]+j] + x[2*p[k]+j+1];
 		}
-	    for(int n = p[k]+1 ; n <= p[k+1]; n ++, count += 2, limit -= 2)// claculate FOAV
-//		for(int n = 1 ; n <= 10000; n ++, count += 2, limit -= 2)// claculate FOAV
+	    for(int n = p[k]+1 ; n <= p[k+1]; n ++, count += 2, limit -= 2)// calculate FOAV
 		{	
 			float denom = (float) (2*(len-2*n+1))*pow(n,2), sum = 0.0f;
       		for(int j = 1; j < limit; j++)

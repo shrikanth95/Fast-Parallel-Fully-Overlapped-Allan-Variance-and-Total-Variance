@@ -14,9 +14,9 @@ x = x(1:30000);
 
 %% Computing FOAV
 
-Corr_size = 1:1:10000;
+Corr_size = 1:1:fix(numel(x)./2);
 count = 4;
-N = 30000;
+N = numel(x);
 xpc = x(1:N);
 
 tic;
